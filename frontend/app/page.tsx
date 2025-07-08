@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import StockList from "./stock-list";
 
 export default function Home() {
   return (
@@ -50,6 +53,9 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+
+        {/* Render the StockList component here */}
+        <StockList />
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
@@ -101,3 +107,4 @@ export default function Home() {
     </div>
   );
 }
+
