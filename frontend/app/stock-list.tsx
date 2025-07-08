@@ -20,7 +20,7 @@ export default function StockList() {
         setData(json);
       } catch (error: any) {
         console.error("Failed to fetch data:", error);
-        setData({ error: error.message });
+        setData({ error: error.message }); // Now this is valid
       } finally {
         setLoading(false);
       }
